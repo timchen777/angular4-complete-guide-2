@@ -1,0 +1,15 @@
+[user]
+	name = timchen777
+	email = timchen7@yahoo.com
+[core]
+    editor = nano
+    whitespace = off
+    excludesfile = ~/.gitignore
+[advice]
+    statusuoption = false
+[color]
+    ui = true
+[push]
+    default = current
+[credential]
+	helper = store

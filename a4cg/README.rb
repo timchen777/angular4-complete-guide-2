@@ -71,4 +71,4 @@ $node -v
 V6.9.1
 -----------------------------------------------------------------------------------------
 browser: http://node1-timchen7.c9users.io:8080/
-
+============29. Two-way Binding ( Event binding + Property binding) ================
