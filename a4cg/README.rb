@@ -126,3 +126,6 @@ if click "Add Server button"
 following line will show up in Element
 <p _ngcontent-dnl-2="">Server was created! Name is Testserver</p>
 =================== 34. Enhancing ngIf with an Else Condition ========================
+=================== 35. Styling Elements Dynamically with ngStyle ====================
+Unlike structural directives, attribute directives don't add or removeelements. 
+They only change the element they were placed on.
