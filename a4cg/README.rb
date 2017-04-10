@@ -127,5 +127,21 @@ following line will show up in Element
 <p _ngcontent-dnl-2="">Server was created! Name is Testserver</p>
 =================== 34. Enhancing ngIf with an Else Condition ========================
 =================== 35. Styling Elements Dynamically with ngStyle ====================
-Unlike structural directives, attribute directives don't add or removeelements. 
+Unlike structural directives, attribute directives don't add or remove elements. 
 They only change the element they were placed on.
+attribute directive ngStyle using property binding to change stype(ex:backgroudColor style) dynamically
+<p [ngStyle]="{backgroundColor: getColor()}"
+  getColor() {
+    return this.serverStatus === 'online' ? 'green' : 'red';
+  }
+===================  36. Applying CSS Classes Dynamically with ngClass ===================
+attribute directive ngClass using property binding to change class(ex:online class ) dynamically
+   [ngClass]="{online: serverStatus === 'online'}">
+   @Component( {
+     selector: 'app-server',
+     templateUrl: './server.component.html',
+     styles: [`
+       .online {
+         color: white;
+       }`]
+    })
