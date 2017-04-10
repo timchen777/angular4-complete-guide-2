@@ -145,3 +145,15 @@ attribute directive ngClass using property binding to change class(ex:online cla
          color: white;
        }`]
     })
+====================== 37. Outputting Lists with ngFor ===========================
+<app-server *ngFor="let server of servers"></app-server>
+add unlimited number of servers by clicking "add server" button
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ HW3 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+<li>Add A button which says 'Display Details'</li>
+<li>Add a paragraph with any content of your choice (e.g. 'Secret Password = tuna')</li>
+<li>Toggle the displaying of that paragraph with the button created in the first step</li>
+<li>Log all button clicks in an array and output that array below the secret paragraph 
+(maybe log a timestamp or simply an incrementing number)</li>
+<li>Starting at the 5th log item, give all future log items a blue background (via ngStyle) 
+and white color (ngClass)</li>
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
