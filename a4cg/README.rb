@@ -115,3 +115,13 @@ $$$$$$$$$$$$$$$$$$$$$$$$  HW2 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
   <li>Upon clicking the RESET button, the username should be reset to an empty string
 $$$$$$$$$$$$$$$$$$$$$$$$  HW2 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 ====================== 32. Understanding Directives ===================================
+Directives are Instructions in the DOM!
+======================= 33. Using ngIf to Output Data Conditionally =================
+Look at chrome F12 debugger Element
+after thi sline:
+<!--template bindings={
+  "ng-reflect-ng-if": "true"
+}-->
+if click "Add Server button"
+following line will show up in Element
+<p _ngcontent-dnl-2="">Server was created! Name is Testserver</p>
