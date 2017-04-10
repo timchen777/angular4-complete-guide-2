@@ -33,6 +33,9 @@ use extrenal url file or inline component styles
 =========== 21. Working with Component Selectors ==========
 selector by attribute
 selector by class
+$$$$$$$$$$$$$$$$$$$$$$$$  HW1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+                Practicing components
+$$$$$$$$$$$$$$$$$$$$$$$$  HW1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 ============22. What is Databinding===================
 ============23. String interpolation ==================
 ============24. Property binding ==================
@@ -71,4 +74,44 @@ $node -v
 V6.9.1
 -----------------------------------------------------------------------------------------
 browser: http://node1-timchen7.c9users.io:8080/
-============29. Two-way Binding ( Event binding + Property binding) ================
+============29. Two-way Binding ( Event binding + Property binding) ======
+===========  Section 2, Lecture 30 =====================
+Important: FormsModule is Required for Two-Way-Binding!
+Important: For Two-Way-Binding to work, you need to enable the ngModel  directive. 
+This is done by adding the FormsModule  to the imports[]  array in the AppModule.
+You then also need to add the import from @angular/forms  in the app.module.ts file:
+import { FormsModule } from '@angular/forms';
+============ 31. Combining all 4 Forms of Databinding =====================
+--------------------------------------------------------------------
+Step #1. Property binding: enable "add Server" button after 5 seconds
+  export class ServersComponent implements OnInit {
+  allowNewServer = false;
+  serverCreationStatus = 'No server was created';
+  serverName = 'Testserver';
+  constructor() {
+    setTimeout(() => {
+      this.allowNewServer = true; 
+      }, 5000 );
+  }
+  then enable property(!allowNewServer) binding by [disabled]="!allowNewServer" as follows
+--------------------------------------------
+Step #2. Event binding: listen to be clicked
+   <button class="btn btn-primary" [disabled]="!allowNewServer" (click)="onCreateServer()">Add Server</button>
+   click event onUpdateServerName(event: Event) bind serverName as follows
+----------------------------------------------------------
+Step #3. Two-way binding : To fetech input data serverName
+  input type="text" class="form-control" [(ngModel)]="serverName">
+  from event logic 
+  onUpdateServerName(event: Event) {
+    this.serverName = (<HTMLInputElement>event.target).value;
+  }
+----------------------------------------------
+Step #4. String interpolation: output the data
+   <p>{{ serverName }}</p>
+$$$$$$$$$$$$$$$$$$$$$$$$  HW2 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+  <li>Add a Input field which updates a property ('username') via Two-Way-Binding</li>
+  <li>Output the username property via String Interpolation (in a paragraph below the input)</li>
+  <li>Add a RESET button which may only be (shown and) clicked if the username is NOT an empty string</li>
+  <li>Upon clicking the RESET button, the username should be reset to an empty string
+$$$$$$$$$$$$$$$$$$$$$$$$  HW2 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+====================== 32. Understanding Directives ===================================
