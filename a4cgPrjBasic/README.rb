@@ -177,7 +177,7 @@ add "../node_modules/bootstrap/dist/css/bootstrap.min.css"  to angular-cli.json 
 
 ===================== 38. Getting the Index when using ngFor ===========================
 ==================== Course Project - The Basics ===================
-                 New App a4cgPrjBasic 
+                 c
 ==============  41. Setting up the Application =====================
 timchen7:~ (master) $  ng new a4cgPrjBasic
 timchen7:~ (master) $  cd a4cgPrjBasis
@@ -185,3 +185,20 @@ timchen7:~/a4cgPrjBasic (master) $ $ npm install --save bootstrap
 add "../node_modules/bootstrap/dist/css/bootstrap.min.css"  to angular-cli.json file
 timchen7:~/a4cgPrjBasic (master) $ ng serve --host 0.0.0.0 --port 8080 --live-reload-port 8081
 Browser http://node1-timchen7.c9users.io:8080/  see--> App Works!
+==============  42. Creating the Components ========================
+manually create HeaderComponent
+$ ng g c recipes --spec false
+$ ng g c recipes/recipe-list --spec false
+$ ng g c recipes/recipe-detail --spec false
+$ ng g c recipes/recipe-list/recipe-item --spec false
+$ ng g c shopping-list --spec false
+$ ng g c shopping-list/shopping-edit --spec false
+see app.modules.ts :
+import { AppComponent } from './app.component';
+import { HeaderComponent } from './header/header.component';
+import { RecipesComponent } from './recipes/recipes.component';
+import { RecipeListComponent } from './recipes/recipe-list/recipe-list.component';
+import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.component';
+import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-item.component';
+import { ShoppingListComponent } from './shopping-list/shopping-list.component';
+import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.comp
