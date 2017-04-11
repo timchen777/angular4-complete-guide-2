@@ -157,3 +157,4 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ HW3 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 <li>Starting at the 5th log item, give all future log items a blue background (via ngStyle) 
 and white color (ngClass)</li>
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+===================== 38. Getting the Index when using ngFor ===========================
