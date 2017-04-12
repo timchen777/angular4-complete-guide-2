@@ -207,5 +207,6 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
 =============== 44. Adding a Navigation Bar =====================
 =============== 46. Creating a "Recipe" Model===================
 =============== 47. Adding Content to the Recipes Components ===========
+=============== 48. Outputting a List of Recipes with ngFor ============
 
 
