@@ -1,8 +1,9 @@
 ================== https://www.udemy.com/the-complete-guide-to-angular-2/learn/==============================
-> npm install -g angular-cli @angular/cli 
-> ng new a4cg
-> cd a4cg
-> ng serve ==> localhist:4200 see App Works! 
+$ npm install -g angular-cli @angular/cli 
+$ ng new a4cg
+$ cd a4cg
+$ ng serve --host 0.0.0.0 --port 8080 --live-reload-port 8081
+--> see App Works! 
 ================== DEMO angulat two-way data-binding ================
 ------app.components.html------
 <input type="text" [(ngModel)]="name">
@@ -203,3 +204,5 @@ import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-it
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.comp
 ==============  43. Using the Components ========================
+=============== 44. Adding a Navigation Bar =====================
+
