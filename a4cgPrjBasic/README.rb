@@ -205,4 +205,7 @@ import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.comp
 ==============  43. Using the Components ========================
 =============== 44. Adding a Navigation Bar =====================
+=============== 46. Creating a "Recipe" Model===================
+=============== 47. Adding Content to the Recipes Components ===========
+
 
